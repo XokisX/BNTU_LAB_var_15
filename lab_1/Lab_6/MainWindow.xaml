@@ -1,0 +1,38 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_6"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="Lab_6.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="InputName" HorizontalAlignment="Left" Height="23" Margin="96,13,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="245"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="46,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="InputMark" HorizontalAlignment="Left" Height="23" Margin="96,37,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="245"/>
+        <Label Content="Mark:" HorizontalAlignment="Left" Margin="46,34,0,0" VerticalAlignment="Top"/>
+        <Label Content="Status:" HorizontalAlignment="Left" Margin="46,60,0,0" VerticalAlignment="Top"/>
+        <Label Content="Mark:" HorizontalAlignment="Left" Margin="46,120,0,0" VerticalAlignment="Top"/>
+        <Calendar x:Name="InputDate" HorizontalAlignment="Left" Margin="96,124,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="InputStatus" HorizontalAlignment="Left" Height="54" Margin="96,65,0,0" VerticalAlignment="Top" Width="245">
+            <System:String>In progress</System:String>
+            <System:String>Ready</System:String>
+            <System:String>Given to the customer</System:String>
+        </ListBox>
+        <Button Content="Create or Open" HorizontalAlignment="Left" Margin="33,374,0,0" VerticalAlignment="Top" Width="149" Click="Button_Click"/>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="215,374,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button Content="Close" HorizontalAlignment="Left" Margin="324,374,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="ButtonWrite" Content="Write" HorizontalAlignment="Left" Margin="96,295,0,0" VerticalAlignment="Top" Width="140" Height="29" Click="ButtonWrite_Click" Visibility="Hidden"/>
+        <DataGrid  AutoGenerateColumns="True" x:Name="ResultGrid" HorizontalAlignment="Left" Height="299" Margin="392,13,0,0" VerticalAlignment="Top" Width="380">
+            <!--<DataGrid.Columns>
+                <DataGridTextColumn Header="name" Width="Auto"/>
+                <DataGridTextColumn Header="marker" Width="Auto"/>
+                <DataGridTextColumn Header="status" Width="Auto"/>
+                <DataGridTextColumn Header="date" Width="Auto"/>
+            </DataGrid.Columns>-->
+        </DataGrid>
+        <Button Content="Sort" HorizontalAlignment="Left" Margin="538,317,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>
